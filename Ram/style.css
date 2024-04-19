@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@600&display=swap');
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    /* animation: Ashu 5s ease-in-out infinite; */
+    background: url(./img/hanuman-7999727_1280\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1{
+    font-family: cursive;
+    color: #ff5005 ;
+    
+}
+.card{
+    background-image: url(./img/Ram.png);
+    display: flex;
+    justify-content:center;
+    height: 400px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items:end;
+    /* border: solid 2px #fff; */
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url(./img/left2.JPG);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+    display:flex
+}
+.card:hover::before{
+    transform: translateX(-100%);
+}
+.card::After{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url(./img/right2.JPG);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+}
+.card:hover::after{
+    transform: translateX(100%);
+}
+/* @keyframes Ashu{
+    0%{
+        background: url();
+    }
+    30%{
+        background: url();
+    }
+    50%{
+        background: url();
+    }
+    100%{
+        background: url();
+    }
+} */
